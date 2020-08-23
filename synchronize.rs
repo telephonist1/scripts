@@ -18,6 +18,7 @@ fn synchronize(dir: &str, dest_dir: &str) {
         } else {
             println!("Copying {}", &file);
             Command::new("cp")
+                .arg("-r")
                 .arg(format!("{}/{}", &dir, &file))
                 .arg(&dest_dir)
                 .spawn()
