@@ -27,5 +27,5 @@ fn synchronize(dir: &str, dest_dir: &str) {
 }
 
 fn main() {
-    synchronize("/home/shamil/Music", "/home/shamil/mobile/Card/Music");
+    println!("Hello, world!");
 }
